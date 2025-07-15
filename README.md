@@ -4,7 +4,7 @@ A PowerShell script to backup and restore WSL (Windows Subsystem for Linux) Ubun
 
 ## Demo
 
-![Demo](/Resources/CreateTasj.png)
+![Demo](/Resources/CreateTask.png)
 
 ## Features
 
