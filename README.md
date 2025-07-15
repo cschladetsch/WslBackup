@@ -82,6 +82,38 @@ Selected: ubuntu_backup_20240115_143022.tar
 WARNING: This will replace your current Ubuntu installation. Continue? (yes/no): yes
 ```
 
+## Automated Backups
+
+The repository includes scripts to set up automated backups using Windows Task Scheduler:
+
+### Setting up Automated Backups
+
+1. **Run PowerShell as Administrator**
+2. **Run the setup script**:
+   ```powershell
+   .\create_scheduled_task.ps1
+   ```
+
+This creates a scheduled task that:
+- Runs backups every 2 days at 6:00 PM
+- Automatically runs later if the computer was off at the scheduled time
+- Has built-in retry logic for failed backups
+- Runs with elevated privileges for WSL access
+
+### Removing Automated Backups
+
+To remove the scheduled task:
+```powershell
+.\remove_scheduled_task.ps1
+```
+
+### Manual Task Management
+
+You can also manage the task through Windows Task Scheduler:
+1. Open Task Scheduler
+2. Navigate to `Task Scheduler Library > WSL Backups`
+3. Find "WSL Ubuntu Backup" task
+
 ## License
 
 This project is provided as-is for personal use.
