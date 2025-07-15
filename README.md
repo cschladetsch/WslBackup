@@ -2,6 +2,10 @@
 
 A PowerShell script to backup and restore WSL (Windows Subsystem for Linux) Ubuntu installations.
 
+## Demo
+
+![Demo](/Resources/CreateTasj.png)
+
 ## Features
 
 - **Automated Backups**: Creates timestamped backups of your WSL Ubuntu installation
