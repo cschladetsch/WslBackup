@@ -2,6 +2,8 @@
 
 A PowerShell script to backup and restore WSL (Windows Subsystem for Linux) Ubuntu installations.
 
+Also handy to share WSL images between users/machines.
+
 ## Demo
 
 ![Demo](/Resources/CreateTask.png)
