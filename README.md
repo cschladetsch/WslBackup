@@ -59,33 +59,6 @@ You can modify these variables in the script:
 - **Disk Space**: Backups can be large (several GB), ensure you have sufficient disk space
 - **WSL Path**: The script assumes the default WSL Ubuntu installation path. Modify if you've installed Ubuntu from a different source
 
-## Example Output
-
-### Backup Mode
-```
-=== WSL Ubuntu Backup Mode ===
-Shutting down WSL...
-Creating backup... This might take a while...
-Backup completed successfully: D:\wsl_backup\ubuntu_backup_20240115_143022.tar
-Removed old backup: ubuntu_backup_20240110_120000.tar
-Backup size: 4.52 GB
-```
-
-### Restore Mode
-```
-=== WSL Ubuntu Restore Mode ===
-
-Available backups:
-1. ubuntu_backup_20240115_143022.tar - 4.52 GB - Created: 01/15/2024 14:30:22
-2. ubuntu_backup_20240114_090000.tar - 4.48 GB - Created: 01/14/2024 09:00:00
-3. ubuntu_backup_20240113_153045.tar - 4.45 GB - Created: 01/13/2024 15:30:45
-
-Select backup number to restore (1-3): 1
-
-Selected: ubuntu_backup_20240115_143022.tar
-WARNING: This will replace your current Ubuntu installation. Continue? (yes/no): yes
-```
-
 ## Automated Backups
 
 The repository includes scripts to set up automated backups using Windows Task Scheduler:
